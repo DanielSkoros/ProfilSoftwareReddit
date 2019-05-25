@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "Final version of internship task",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Daniel Skoroś",
+  "license": "ISC"
+}

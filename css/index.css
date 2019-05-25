@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: black;
+  height: 80px;
+  color: white;
+}
+
+.navbar ul {
+  margin: auto;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  font-size: 36px;
+  margin: auto;
+  line-height: 80px;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.container .action--button {
+  background: #cb4e4e;
+  color: #fff;
+  -webkit-box-shadow: 0 6px #ab3c3c;
+          box-shadow: 0 6px #ab3c3c;
+  border-radius: 0 0 5px 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .sort {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+table {
+  width: 1900px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+/*# sourceMappingURL=index.css.map */

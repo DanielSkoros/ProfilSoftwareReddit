@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                Daniel Skoroś - fetch posts from Reddit
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <button class="action--button" id="fetch">
+            Fetch posts
+        </button>
+        <div class="sort--container">
+                <button class="action--button" id="sort" value="upvotes">
+                    Sort Upvotes
+                </button>
+                <button class="action--button" id="sort" value="score">
+                    Sort Score
+                </button>
+                <button class="action--button" id="sort" value="num_comments">
+                    Sort Comments
+                </button>
+                <button class="action--button" id="sort" value="created">
+                    Sort by date
+                </button>
+        </div>
+        <button class="action--button" id="high">
+            Get title of highest upvotes to comments ratio
+        </button>
+        <button class="action--button" id="yesterday">
+            Get posts from yesterday
+        </button>
+    </div>
+    
+    <div>
+        <table class="posts-container">
+            <tr>
+                <th>Title</th>
+                <th>Upvotes</th>
+                <th>Score</th>
+                <th>Comments</th>
+                <th>Created</th>
+            </tr>
+        </table>             
+     </div>
+
+    <script src="//cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
